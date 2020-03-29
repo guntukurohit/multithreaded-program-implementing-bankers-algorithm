@@ -304,7 +304,7 @@ void printState(){
         }
         printf("\n");
     }
-    printf("Processes (possibly needed resources):\n");
+    printf("Processes (possibly needed resources) :\n");
     printf("   %s\n",string);
     for(int i=0; i<CUSTOMERS_NUMBER;i++){
         printf("P%d ",i+1);
