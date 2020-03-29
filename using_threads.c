@@ -108,7 +108,7 @@ void *thread_func(void* Tcus_num){
             requestSum=requestSum+request[i];
         }
         
-        if(requestsum!=0)  // to make sure it doesn't requst for 0 reaources
+        if(requestSum!=0)  // to make sure it doesn't requst for 0 reaources
             while(request_resources(cus_num,request)==-1); // only when the request has been granted succesfully
                                                                 // will the loop terminates, otherwise it will keep
                                                                 // making the same request.
@@ -164,7 +164,7 @@ int request_resources(int cus_num, int request[]){
             printf("PROCESS%d ",safeSequence[i]+1 );
         
         }
-        printf("\n PROCESS%d's request has been granted",customer_num+1);
+        printf("\n PROCESS%d's request has been granted",cus_num+1);
        
         for(int j=0;j<RESOURCES_NUMBER;j++){ // give the resources to the theread
             allocation[cus_num][j]=allocation[cus_num][j]+request[j];
