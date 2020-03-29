@@ -187,7 +187,7 @@ int request_resources(int cus_num, int request[]){
         
     }
     else{
-        printf("cannot find a safe sequencen");
+        printf("cannot find a safe sequence \n");
     
     }
    
@@ -229,7 +229,7 @@ int bankerAlgorithm(int cus_num,int request[]){
     
         for(int i=0;i<RESOURCES_NUMBER;i++){ // pretend to give the resource to the thread
             Bavailable[i]=Bavailable[i]-request[i];
-            Ballocation[cus_num][i]=Ballocation[cuS_num][i]+request[i];
+            Ballocation[cus_num][i]=Ballocation[cus_num][i]+request[i];
             Bneed[cus_num][i]=Bneed[cus_num][i]-request[i];
         }
     
